@@ -9,7 +9,7 @@ elUsername.addEventListener("keyup", transformUpperCase);
 function checkPasswordLength(){
     let password = document.getElementById("kataLaluan").value;
     if(password.length < 5){
-        alert("password must be more than 5 chracters");
+        alert("password must be more than 5 characters");
     }else {
         alert("Password accepted")
     }
