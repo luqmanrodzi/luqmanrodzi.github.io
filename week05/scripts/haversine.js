@@ -5,7 +5,7 @@ function haversine(lat1, lon1, lat2, lon2 ){
     lat1 = lat1.toRad();
     lat2 = lat2.toRad();
 
-    let a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.sin(dLon/2) * Math.sin(dLon2) + Math.cos(lat1) * Math.cos(lat2);
+    let a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.sin(dLon/2) * Math.sin(dLon/2) + Math.cos(lat1) * Math.cos(lat2);
     let c = 2 * Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
     let d = R * c;
 
