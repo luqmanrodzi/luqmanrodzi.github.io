@@ -1,7 +1,7 @@
 letelLocate = document.getElementById("locate")
 elLocate.addEventListener ("click",function(){
     if(navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(){
+        navigator.geolocation.getCurrentPosition(function(position){
             let elLat = document.getElementById("lat")
             let elLong = document.getElementById("long");
 
