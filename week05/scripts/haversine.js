@@ -24,7 +24,7 @@ function roundVal(val) {
 }
 
 function calculateDistances(lat, lon) {
-    let d1 = haversine(lat,lon, 2,922562, 101.650965);
+    let d1 = haversine(lat,lon, 2.922562, 101.650965);
     let d2 = haversine(lat,lon, 3.073065, 101.607787);
     let d3 = haversine(lat,lon, 3.158761, 101.714524);
 
