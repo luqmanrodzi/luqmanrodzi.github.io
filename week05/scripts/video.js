@@ -7,7 +7,7 @@ window.onload = function(){
     });
 
     let pauseBtn = document.getElementById("pauseBtn");
-    playBtn.addEventListener("click", function(){
+    pauseBtn.addEventListener("click", function(){
         video.pause();
     });
     
