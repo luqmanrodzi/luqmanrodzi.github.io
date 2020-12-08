@@ -12,10 +12,10 @@ window.onload = function(){
     });
     
  let freezeBtn = document.getElementById("freezeBtn");
- playBtn.addEventListener("mousedown", function(){
+ freezeBtn.addEventListener("mousedown", function(){
      video.pause();
  });
- playBtn.addEventListener("mouseup", function(){
+ freezeBtn.addEventListener("mouseup", function(){
     video.play();
  });
 }
