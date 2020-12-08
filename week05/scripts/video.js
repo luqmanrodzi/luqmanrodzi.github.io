@@ -32,5 +32,5 @@ window.onload = function(){
     let volumeCtrl = document.getElementById("volume");
     volumeCtrl.addEventListener("change", function(){
         video.volume = volumeCtrl.value ;
-    })
+    });
 };
