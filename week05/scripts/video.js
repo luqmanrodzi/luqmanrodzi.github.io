@@ -6,16 +6,16 @@ window.onload = function(){
         video.play();
     });
 
- let pauseBtn = document.getElementById("pauseBtn");
+    let pauseBtn = document.getElementById("pauseBtn");
     playBtn.addEventListener("click", function(){
         video.pause();
     });
     
- let freezeBtn = document.getElementById("freezeBtn");
- freezeBtn.addEventListener("mousedown", function(){
+    let freezeBtn = document.getElementById("freezeBtn");
+    freezeBtn.addEventListener("mousedown", function(){
      video.pause();
- });
- freezeBtn.addEventListener("mouseup", function(){
+    });
+    freezeBtn.addEventListener("mouseup", function(){
     video.play();
  });
 }
