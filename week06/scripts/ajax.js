@@ -1,4 +1,3 @@
-
 function getRandomUser(){
     let xhttp = new XMLHttpRequest();
 
