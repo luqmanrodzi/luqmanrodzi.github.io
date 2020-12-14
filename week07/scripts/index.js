@@ -20,4 +20,4 @@ let app3 = new Vue({
     data: {
         seen: true
     }
-})
+});
