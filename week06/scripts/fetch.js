@@ -36,7 +36,7 @@ let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/boo
     booking: {
         name: guestName,
         email: guestEmail,
-        pax: guestPax,
+        pax: guestPax
     }
   }
   fetch(url, {
