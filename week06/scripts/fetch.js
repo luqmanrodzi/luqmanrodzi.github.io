@@ -60,6 +60,8 @@ let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/boo
       let gName = document.getElementById("guestName").value;
       let gEmail = document.getElementById("guestEmail").value;
       let gPax = document.getElementById("guestPax").value;
+      //test test
+      
 
       BookNow(guestName, guestEmail, guestPax);
   });
