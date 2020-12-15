@@ -14,13 +14,13 @@ function GetBookings(){
                  let gId = json.bookings[i].id;
 
                 bookingList.innerHTML += gId + "-" + gName + "," + gEmail 
-                + ", pax:" + pax + "<br>";
+                + ", pax:" + gPax + "<br>";
             
              }
         });
 }
 
 let getBookingBtn = document.getElementById("getbooking");
-getBookingBtn.addEventListener("click", function (){
+getBookingBtn.addEventListener("click", function () {
     GetBookings();
 });
