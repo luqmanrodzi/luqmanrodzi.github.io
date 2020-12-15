@@ -43,7 +43,7 @@ let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/boo
     method: 'POST',
     body: JSON.stringify(body),
     headers: {
-        "content-type": "application/json"
+        "Content-Type": "application/json"
     }
   })
   .then((response) => response.json())
