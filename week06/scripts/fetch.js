@@ -55,7 +55,7 @@ let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/boo
     GetBookings();
   });
 }
-  let bookNow = document.getElementById("bookNow");
+  let BookNow = document.getElementById("bookNow");
   BookNow.addEventListener("click" , function(){
       let gName = document.getElementById("guestName").Value;
       let gEmail = document.getElementById("guestEmail").Value;
