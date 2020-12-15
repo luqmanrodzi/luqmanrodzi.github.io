@@ -11,7 +11,7 @@ function GetBookings(){
              let jsonDiv = document.getElementById("json");
              jsonDiv.innerHTML = "";
              jsonDiv.innerHTML = json.bookings;
-             
+
              for(let i = 0; i < json.bookings.length;i++){
                  let gName = json.bookings[i].name;
                  let gEmail = json.bookings[i].email;
@@ -25,7 +25,7 @@ function GetBookings(){
         });
 }
 
-let getBookingBtn = document.getElementById("getbooking");
+let getBookingBtn = document.getElementById("getBooking");
 getBookingBtn.addEventListener("click", function () {
     GetBookings();
 });
