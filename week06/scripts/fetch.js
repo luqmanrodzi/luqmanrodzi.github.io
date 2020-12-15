@@ -62,4 +62,4 @@ let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/boo
       let gPax = document.getElementById("guestPax").Value;
 
       BookNow(guestName, guestEmail, guestPax)
-  });
+  })
