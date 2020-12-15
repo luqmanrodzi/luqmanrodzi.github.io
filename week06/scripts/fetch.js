@@ -42,6 +42,9 @@ let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/boo
   fetch(url, {
     method: 'POST',
     body: JSON.stringify(body)
+    headers: {
+        "content-type": "application/json"
+    }
   })
   .then((response) => response.json())
   .then(json => {
@@ -57,4 +60,6 @@ let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/boo
       let gName = document.getElementById("guestName").Value;
       let gEmail = document.getElementById("guestEmail").Value;
       let gPax = document.getElementById("guestPax").Value;
-  })
+
+      BookNow(guestName, guestEmail, guestPax)
+  });
