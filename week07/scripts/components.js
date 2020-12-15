@@ -22,7 +22,7 @@ let app7 = new Vue({
             {
                 id: 3,
                 text: "Protiens"
-            }
+            },
         ]
     }
 });
