@@ -65,3 +65,21 @@ let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/boo
 
       BookNow(gName,gEmail,gPax);
   });
+
+  function DeleteBooking(id){
+    let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/bookings/2' + id;
+    fetch(url, {
+      method: 'DELETE',
+  })
+    .then((response) => response.json())
+    .then(() => {
+      document.getElementById("deleteMsg").innerHTML = "Booking Delete!";
+      getBooking();
+    });
+}
+
+let DeleteBooking = document.getElementById("deleteBooking");
+deleteBooking.addEventListener("click", function () {
+  let deleteId = document.getElementById("deleteId").value;
+  DeleteBooking(deleteId);
+})
