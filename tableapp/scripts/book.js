@@ -4,7 +4,8 @@ function BookNow(guestName,guestEmail,guestPax, guestRemarks){
         booking: {
             name:guestName,
             email:guestEmail,
-            pax:guestPax
+            pax:userPax,
+            remarks: userRemarks,
         }
     }
     fetch(url, {
@@ -16,11 +17,8 @@ function BookNow(guestName,guestEmail,guestPax, guestRemarks){
     })
         .then((response) => response.json())
         .then(json => {
-        // Do something with object
-        //console.log(json.booking);
-        let bookMsg = document.getElementById('bookMsg');
-        bookMsg.innerHTML = json.booking.name + " added!"
-        GetBookings();
+            alert(json.booking.name + "added!");
+        
     });
   }
 
