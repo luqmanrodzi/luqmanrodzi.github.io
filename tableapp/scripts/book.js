@@ -5,7 +5,7 @@ function BookNow(guestName,guestEmail,guestPax, guestRemarks){
             name:guestName,
             email:guestEmail,
             pax:userPax,
-            remarks: userRemarks,
+            remarks: userRemarks
         }
     }
     fetch(url, {
@@ -17,7 +17,7 @@ function BookNow(guestName,guestEmail,guestPax, guestRemarks){
     })
         .then((response) => response.json())
         .then(json => {
-            alert(json.booking.name + "added!");
+            alert(jason.booking.name + "added!`);
         
     });
   }
