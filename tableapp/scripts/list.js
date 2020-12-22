@@ -31,10 +31,10 @@ function GetBookings(){
             bookingIds.push(buttonId);
         }
 
-        for(let j = 0; j < bookingIds.length; j++){
+        for (let j = 0; j < bookingIds.length; j++) {
             let el = document.getElementById(bookingIds[j]);
-            el.addEventListener("click", function(){
-                let theId = bookingIds[j].replace("delete", "")
+            el.addEventListener("click", function () {
+                let theId = bookingIds[j].replace("delete", "");
                 alert(theId);
             });
         }
