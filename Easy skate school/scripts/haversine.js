@@ -26,9 +26,9 @@ function roundVal(val) {
 }
 
 function calculateDistances(lat, lon) {
-    let d1 = haversine(lat,lon, 2.922562, 101.650965);
-    let d2 = haversine(lat,lon, 3.073065, 101.607787);
-    let d3 = haversine(lat,lon, 3.158761, 101.714524);
+    let d1 = haversine(lat,lon, 3.1421613,101.7106398);
+    let d2 = haversine(lat,lon, 1.4950727,103.6706463);
+    let d3 = haversine(lat,lon, 6.199076,100.3865602);
 
     return [d1,d2, d3]
 }
@@ -38,9 +38,9 @@ elLocate.addEventListener("click", function() {
         navigator.geolocation.getCurrentPosition(function (position) {
             let elLat = document.getElementById("lat");
             let elLong = document.getElementById("long");
-            let elDepulze = document.getElementById("depulze");
-            let elSunway = document.getElementById("sunway");
-            let elklcc = document.getElementById("klcc");
+            let elDepulze = document.getElementById("zone5skateshop");
+            let elSunway = document.getElementById("nzskateshop");
+            let elklcc = document.getElementById("mypapanskateshop");
 
             let userLat = position.coords.latitude;
             let userLong = position.coords.longitude;
@@ -49,9 +49,9 @@ elLocate.addEventListener("click", function() {
 
             elLat.innerHTML = "your latitute : " + userLat;
             elLong.innerHTML = "Your longitude : " + userLong;
-            elDepulze.innerHTML = "Distance to De Pulze, CJ is : " + distances[0];
-            elSunway.innerHTML = "Distance to Sunway Pyramid is : " + distances[1];
-            elklcc.innerHTML = "Distance to klcc is : " + distances[2];
+            elDepulze.innerHTML = "Distance to Zone5 Skateshop is : " + distances[0];
+            elSunway.innerHTML = "Distance to NZ Skateshop JB is : " + distances[1];
+            elklcc.innerHTML = "Distance to Mypapan Skateshop is : " + distances[2];
 
         });
     } else {
