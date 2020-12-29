@@ -1,10 +1,10 @@
-function BookNow(guestName, guestPhone, guestEmail, guestPackage, guestRemarks){
-    let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/bookings';
+function BookNow(guestName, guestPhone, guestEmail, guestPackage, guestRemarks) {
+    let url = 'https://api.sheety.co/74a1e610a460b8d7623d348f945104f7/easySkateSchool/sheet1';
     let body = {
-        booking: {
-            name:guestName,
+        sheet1: {
+            name: guestName,
             phone: guestPhone,
-            email:guestEmail,
+            email: guestEmail,
             package: guestPackage,
             remarks: guestRemarks,
         }
@@ -12,22 +12,25 @@ function BookNow(guestName, guestPhone, guestEmail, guestPackage, guestRemarks){
     fetch(url, {
         method: 'POST',
         body: JSON.stringify(body),
-        headers:{
-            "Content-Type":"application/json"
+        headers: {
+            "Content-Type": "application/json"
         }
     })
         .then((response) => response.json())
         .then(json => {
-        bookMsg.innerHTML = json.booking.name + " added!"
-        
+            alert(json.sheet1.name + " added!");
+        });
+}
+
+
+window.addEventListener("load", function () {
+    document.getElementById("bookNow").addEventListener("click", function () {
+        let userName = document.getElementById("userName").value;
+        let userPhone = document.getElementById("userPhone").value;
+        let userEmail = document.getElementById("userEmail").value;
+        let userPackage = document.getElementById("userPackage").value;
+        let userRemarks = document.getElementById("userRemarks").value;
+
+        BookNow(userName, userPhone, userEmail, userPackage, userRemarks);
     });
-  }
-  window.addEventListener("click", function(){
-document.getElementById("bookNow").addEventListener("click", function(){
-    let userName = document.getElementById("userName").value;
-    let userPhone = document.getElementById("userPhone").value;
-    let userEmail = document.getElementById("userEmail").value;
-    let userPackage = document.getElementById("userPackage").value;
-    let userRemarks = document.getElementById("userRemarks").value;
 });
-  })
