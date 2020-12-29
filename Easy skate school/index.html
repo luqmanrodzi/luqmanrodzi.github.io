@@ -31,6 +31,20 @@
     width: 80%;
     
   }
+  /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
     </style>
 </head>
 <body>
@@ -61,22 +75,15 @@
       </div>
   </div>    
   <!--first paragraph-->
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/skateschool.JPG" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="fontSizeCaption">Want Learn Skateboard!!</h1>
-          <p class="fontSizeCaption">You are right place!! We providing skateboarding lesson for all age</p>
-                  <hr class="fontSizeCaption">
-                  <p>Click below to learn more about us and get free trail class for 2 week</p>
-                  <br>
-                  <a href="aboutUs.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Learn More</a>
-      </div>
-   </div>
+  <div class="container">
+    <img src="img/skateschool.JPG" alt="Snow" style="width:100%;">
+    <div class="centered">
+      <h1 class="display-4">Want Learn Skateboard!!</h1>
+      <h2>You are right place!! We providing skateboarding lesson for all age</h2>
+      <hr>
+      <h3>Click below to learn more about us and get free trail class for 2 week</h3>
+      <a href="course.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Learn More</a>
+    </div>
   </div>
    <br>
    <!--Second-->
