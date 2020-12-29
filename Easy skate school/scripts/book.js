@@ -1,5 +1,5 @@
 function BookNow(guestName, guestPhone, guestEmail, guestPackage, guestRemarks) {
-    let url = 'https://api.sheety.co/fd818c0c3e27fb12c0cc5d26545b8da8/bookingApp/bookings';
+    let url = 'https://api.sheety.co/74a1e610a460b8d7623d348f945104f7/easySkateSchool/sheet1';
     let body = {
         booking: {
             name: guestName,
@@ -25,9 +25,9 @@ function BookNow(guestName, guestPhone, guestEmail, guestPackage, guestRemarks) 
   window.addEventListener("load", function() {
       document.getElementById("bookNow").addEventListener("click", function() {
           let userName = document.getElementById("userName").value;
-          let userName = document.getElementById("userPhone").value;
+          let userPhone = document.getElementById("userPhone").value;
           let userEmail = document.getElementById("userEmail").value;
-          let userPax = document.getElementById("userPackage").value;
+          let userPackage = document.getElementById("userPackage").value;
           let userRemarks = document.getElementById("userRemarks").value;
 
           BookNow(userName, userPhone, userEmail, userPackage, userRemarks)
